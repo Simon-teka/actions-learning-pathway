@@ -1,0 +1,27 @@
+import math
+
+# Prompt the user for input
+length_value = float(input("Enter a length value: "))
+
+# Calculate and display the areas
+print(f"The area of the square with side length {length_value} is: {length_value ** 2} square units")
+print(f"The area of the circle with radius {length_value} is: {math.pi * (length_value ** 2)} square units")
+
+# Calculate and display the volumes
+print(f"The volume of the cube with side length {length_value} is: {length_value ** 3} cubic units")
+print(f"The volume of the sphere with radius {length_value} is: {(4/3) * math.pi * (length_value ** 3)} cubic units")
+
+# Convert length value to centimeters
+length_value_cm = length_value * 100
+
+# Calculate and display areas in square centimeters and square meters
+area_square_cm = (length_value_cm ** 2)
+area_square_m = area_square_cm / 10000
+print(f"The area of the square in square centimeters is: {area_square_cm} square cm")
+print(f"The area of the square in square meters is: {area_square_m} square m")
+
+radius_circle_cm = length_value_cm
+area_circle_cm = math.pi * (radius_circle_cm ** 2)
+area_circle_m = area_circle_cm / 10000
+print(f"The area of the circle in square centimeters is: {area_circle_cm} square cm")
+print(f"The area of the circle in square meters is: {area_circle_m} square m")

@@ -1,0 +1,21 @@
+# Prompt for the necessary information
+first_name = input("Enter your first name: ")
+last_name = input("Enter your last name: ")
+email_address = input("Enter your email address: ")
+phone_number = input("Enter your phone number: ")
+job_title = input("Enter your job title: ")
+id_number = input("Enter your ID number: ")
+
+# Format the information
+last_name = last_name.upper()
+job_title = job_title.title()
+email_address = email_address.lower()
+
+# Display the formatted information
+print("----------------------------------------")
+print(f"{last_name}, {first_name}")
+print(job_title)
+print(f"ID: {id_number}\n")
+print(email_address)
+print(phone_number)
+print("----------------------------------------")

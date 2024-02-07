@@ -1,0 +1,19 @@
+# Milestone Submission: Project 02 - Meal Price Calculator
+
+# Ask for the price of a child's meal and store the value as a floating point number
+child_meal_price = float(input("What is the price of a child's meal? "))
+
+# Ask for the price of an adult's meal and store the value as a floating point number
+adult_meal_price = float(input("What is the price of an adult's meal? "))
+
+# Ask for the number of children and store the value as an integer
+num_children = int(input("How many children are there? "))
+
+# Ask for the number of adults and store the value as an integer
+num_adults = int(input("How many adults are there? "))
+
+# Compute the subtotal
+subtotal = (child_meal_price * num_children) + (adult_meal_price * num_adults)
+
+# Display the subtotal
+print("Subtotal: ${:.2f}".format(subtotal))
